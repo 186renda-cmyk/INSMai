@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Instagram账号购买 | INS-Mai.TOP - Ins老号/粉丝号/白号自动发货平台</title>
+    <meta name="description" content="专业提供 Instagram 账号购买服务 (INS-Mai.TOP)。精选 Ins 满月白号、Instagram 高权重老号、百粉/千粉/万粉号及 KOL 账号。支持 2FA 双重验证，自动发货，安全稳定，跨境电商与品牌营销首选。">
+    <meta name="keywords" content="Instagram账号购买, Ins账号批发, Instagram老号, Ins粉丝号, 购买IG账号, Instagram白号, Ins千粉号, 跨境电商账号, Instagram Marketing">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        dark: '#000000',
+                        card: '#121212',
+                        // Instagram 品牌渐变色系
+                        insPurple: '#833AB4',
+                        insRed: '#FD1D1D',
+                        insOrange: '#F77737',
+                        insYellow: '#FCAF45'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* 极光背景 */
+        .bg-aurora {
+            background-color: #000000;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(131, 58, 180, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(253, 29, 29, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(247, 119, 55, 0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ins 风格渐变文字 */
+        .text-gradient {
+            background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 渐变边框 */
+        .border-gradient {
+            position: relative;
+            background: padding-box linear-gradient(#121212, #121212), border-box linear-gradient(45deg, #833AB4, #FD1D1D);
+            border: 1px solid transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-insRed selection:text-white bg-aurora">
+
+    <nav class="sticky top-0 w-full z-50 glass-card border-x-0 border-t-0 bg-black/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2 group cursor-pointer">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-insPurple via-insRed to-insOrange flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                        <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight">INS-Mai<span class="text-transparent bg-clip-text bg-gradient-to-r from-insPurple to-insOrange">.TOP</span></span>
+                </div>
+
+                <div class="hidden md:flex gap-8 text-sm font-bold tracking-wide text-gray-400">
+                    <a href="#products" class="hover:text-white transition-colors">INS 账号</a>
+                    <a href="#fans" class="text-insOrange hover:text-white transition-colors">粉丝/KOL号</a>
+                    <a href="#features" class="hover:text-white transition-colors">服务优势</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="hidden md:flex items-center gap-2 bg-white text-black px-6 py-2 rounded-full text-sm font-black hover:bg-gray-100 transition-all shadow-[0_0_15px_rgba(253,29,29,0.3)]">
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                        立即购买
+                    </a>
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-card border-b border-white/10 absolute w-full">
+            <div class="grid grid-cols-1 p-4 gap-2">
+                <a href="#products" class="block p-3 text-center rounded bg-white/5 text-sm font-bold">Instagram 账号选购</a>
+                <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="block p-3 text-center rounded bg-gradient-to-r from-insPurple to-insRed text-white text-sm font-black">前往商店</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-20 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
+        <div class="absolute top-20 right-0 w-[600px] h-[600px] bg-insPurple/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-insOrange/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300 text-xs font-bold mb-6 uppercase tracking-widest">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-insRed opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-insRed"></span>
+                        </span>
+                        2026 Instagram 流量风口
+                    </div>
+                    
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-[1.1]">
+                        Boost Your <br>
+                        <span class="text-gradient animate-gradient-x">Instagram Brand</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        一站式 Instagram 账号服务商。精选
+                        <strong class="text-white">高权重老号</strong>、<strong class="text-white">真实粉丝号</strong>、<strong class="text-white">KOL 账号</strong>。
+                        自动发货，支持 USDT / 支付宝，助力品牌全球营销。
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#products" class="px-8 py-4 bg-gradient-to-r from-insPurple to-insRed hover:to-insOrange text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(131,58,180,0.4)]">
+                            浏览账号库存 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <div class="flex items-center justify-center gap-4 px-6 py-4 rounded-xl border border-white/10 bg-white/5 text-sm text-gray-400">
+                            <span class="flex items-center gap-1"><i data-lucide="zap" class="w-4 h-4 text-insYellow"></i> 自动发货</span>
+                            <span class="w-px h-4 bg-white/10"></span>
+                            <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4 text-insRed"></i> 2FA 保护</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 relative w-full max-w-md lg:max-w-full animate-float hidden md:block">
+                    <div class="glass-card rounded-3xl p-6 relative z-10 border-t border-white/20">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-sm font-bold">instagram</span>
+                            <i data-lucide="more-horizontal" class="w-5 h-5 text-gray-400"></i>
+                        </div>
+                        <div class="flex items-center gap-8 mb-6">
+                            <div class="w-20 h-20 rounded-full p-[2px] bg-gradient-to-tr from-insYellow via-insRed to-insPurple">
+                                <div class="w-full h-full rounded-full bg-black border-2 border-black flex items-center justify-center overflow-hidden">
+                                    <i data-lucide="user" class="w-10 h-10 text-gray-500"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-around text-center">
+                                <div>
+                                    <div class="font-bold text-white text-lg">1.2K</div>
+                                    <div class="text-xs text-gray-400">Posts</div>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white text-lg">50.5K</div>
+                                    <div class="text-xs text-gray-400">Followers</div>
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white text-lg">218</div>
+                                    <div class="text-xs text-gray-400">Following</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mb-4">
+                            <div class="flex-1 py-1.5 bg-white text-black text-center text-sm font-bold rounded-lg">Follow</div>
+                            <div class="flex-1 py-1.5 bg-white/10 text-white text-center text-sm font-bold rounded-lg border border-white/10">Message</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-1">
+                            <div class="aspect-square bg-white/5 rounded"></div>
+                            <div class="aspect-square bg-white/5 rounded"></div>
+                            <div class="aspect-square bg-white/5 rounded"></div>
+                        </div>
+                    </div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-insPurple to-insRed rounded-3xl blur-2xl opacity-20 -z-10"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <span class="text-insRed font-bold tracking-widest uppercase text-xs border border-insRed/30 px-3 py-1 rounded-full bg-insRed/5">Official Price List</span>
+                <h2 class="text-4xl md:text-5xl font-black text-white mt-4 italic tracking-tighter">
+                    Choose Your <span class="text-gradient">Instagram Account</span>
+                </h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    官方一手号源，价格透明。从新手入门到品牌营销，满足您不同阶段的需求。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <div class="group relative flex flex-col glass-card rounded-3xl p-8 hover:bg-white/5 transition-all duration-300 border-t border-white/10">
+                    <div class="mb-4 flex justify-between items-center">
+                        <span class="px-3 py-1 rounded-md bg-gray-800 text-gray-300 text-xs font-bold">Recommended</span>
+                        <span class="text-xs text-gray-500 font-mono">Stock: 99+</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Ins 2FA 邮箱号</h3>
+                    <p class="text-sm text-gray-400 mb-6 flex-grow">
+                        文档力荐的“新手款”。邮箱注册，已开通 2FA 双重验证，安全性高，适合入门。
+                    </p>
+                    
+                    <div class="flex items-end gap-1 mb-6">
+                        <span class="text-sm font-bold text-gray-500 mb-1">¥</span>
+                        <span class="text-4xl font-black text-white">29.00</span>
+                        <span class="text-xs text-gray-600 ml-1">起</span>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gray-500"></i> <strong>已开通 2FA 双重验证</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-gray-500"></i> 包含注册邮箱 (Mail Access)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="thumbs-up" class="w-4 h-4 text-gray-500"></i> 新手推荐 / 稳定性佳</li>
+                        <li class="flex items-center gap-2"><i data-lucide="plus" class="w-4 h-4 text-gray-500"></i> 另有无头像版 (¥24.00)</li>
+                    </ul>
+
+                    <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="w-full py-4 rounded-xl bg-white/10 hover:bg-white hover:text-black text-center font-bold text-sm transition-all border border-white/10">
+                        立即购买
+                    </a>
+                </div>
+
+                <div id="fans" class="group relative flex flex-col glass-card rounded-3xl p-8 transform md:-translate-y-6 z-10 border-gradient bg-[#1a050d]/90">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-insRed to-insOrange text-white px-6 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-lg flex items-center gap-2">
+                        <i data-lucide="flame" class="w-3 h-3 fill-white"></i> Most Popular
+                    </div>
+
+                    <div class="mb-4 mt-2 flex justify-between items-center">
+                        <span class="px-3 py-1 rounded-md bg-insRed/20 text-insRed text-xs font-bold">1000+ Followers</span>
+                        <span class="text-xs text-insRed font-bold animate-pulse">自带流量</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Ins 千粉/KOL号</h3>
+                    <p class="text-sm text-gray-300 mb-6 flex-grow">
+                        <strong class="text-white">品牌起号神器！</strong>拥有 1000+ 真实粉丝基础。开局即具备 KOC 影响力，提升信任度。
+                    </p>
+                    
+                    <div class="flex items-end gap-1 mb-6">
+                        <span class="text-sm font-bold text-insRed mb-1">¥</span>
+                        <span class="text-5xl font-black text-white">235</span>
+                        <span class="text-sm text-gray-500 line-through mb-1 ml-2">¥298</span>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                        <li class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-insRed"></i> <strong>1000+ 真实粉丝基础</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="trending-up" class="w-4 h-4 text-insRed"></i> <strong>高互动率 / 适合推广</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-insRed"></i> 包含 2FA + 邮箱权限</li>
+                        <li class="flex items-center gap-2"><i data-lucide="arrow-right-circle" class="w-4 h-4 text-insRed"></i> 另有200粉入门款 (¥85)</li>
+                    </ul>
+
+                    <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="w-full py-4 rounded-xl bg-gradient-to-r from-insRed to-insOrange hover:to-insYellow text-white text-center font-bold text-sm transition-all shadow-lg shadow-insRed/20">
+                        立即抢购
+                    </a>
+                </div>
+
+                <div class="group relative flex flex-col glass-card rounded-3xl p-8 hover:bg-white/5 transition-all duration-300 border-t border-insPurple/50">
+                    <div class="mb-4 flex justify-between items-center">
+                        <span class="px-3 py-1 rounded-md bg-insPurple/10 text-insPurple text-xs font-bold">Vintage / 经典</span>
+                        <span class="text-xs text-gray-500">2013-2018</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Ins 精品年份老号</h3>
+                    <p class="text-sm text-gray-400 mb-6 flex-grow">
+                        2018年及更早注册的精品老号。历经风控洗礼，权重极高，耐用抗封。
+                    </p>
+                    
+                    <div class="flex items-end gap-1 mb-6">
+                        <span class="text-sm font-bold text-gray-500 mb-1">¥</span>
+                        <span class="text-4xl font-black text-white">70.00</span>
+                        <span class="text-xs text-gray-600 ml-1">起</span>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i data-lucide="history" class="w-4 h-4 text-insPurple"></i> <strong>2018年 精品老号 (¥70)</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="star" class="w-4 h-4 text-insPurple"></i> 2013-2017 极品号 (¥80-120)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="shield" class="w-4 h-4 text-insPurple"></i> <strong>高权重 / 适合主号运营</strong></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-insPurple"></i> 满月入门老号仅需 ¥29</li>
+                    </ul>
+
+                    <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="w-full py-4 rounded-xl bg-insPurple hover:bg-purple-600 text-white text-center font-bold text-sm transition-all">
+                        立即购买
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="glass-card rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 border border-green-500/20 hover:border-green-500/50 transition-all bg-green-900/10">
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">APP安装包 + 账号</h3>
+                            <span class="bg-green-500 text-black text-[10px] font-bold px-2 py-0.5 rounded">Combo</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            解决安卓下载难问题。套餐含：Instagram APP 安装包 + 2FA 账号。
+                        </p>
+                        <div class="flex items-baseline gap-1 justify-center md:justify-start">
+                            <span class="text-xs text-green-400 font-bold">Bundle</span>
+                            <span class="text-3xl font-black text-white">¥28.80</span>
+                        </div>
+                    </div>
+                    <div class="shrink-0">
+                         <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="px-8 py-3 rounded-xl bg-green-600 text-white font-bold text-sm hover:bg-green-500 transition-all shadow-lg shadow-green-600/20">
+                            购买套餐
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl p-8 flex flex-col md:flex-row items-center gap-8 border border-white/5 hover:border-white/20 transition-all">
+                    <div class="flex-1 text-center md:text-left">
+                        <h3 class="text-xl font-bold text-white mb-2 flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="globe" class="w-5 h-5 text-gray-400"></i> 全球本土 IP 新号
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-4">
+                            美国、越南、老挝等地区 IP 注册的本土号。适合做特定地区的业务推广。
+                        </p>
+                        <div class="flex items-baseline gap-1 justify-center md:justify-start">
+                            <span class="text-xs text-blue-400 font-bold">Region</span>
+                            <span class="text-2xl font-black text-white">¥40.00</span>
+                        </div>
+                    </div>
+                    <div class="shrink-0">
+                         <a href="/go/buy-ins" rel="nofollow sponsored noopener noreferrer" class="px-6 py-3 rounded-xl bg-white text-black font-bold text-sm hover:bg-gray-200 transition-all">
+                            查看地区
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-zinc-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white">How to Grow?</h2>
+                <p class="text-gray-500 mt-2">Instagram 运营核心法则</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4 h-auto md:h-[500px]">
+                
+                <div class="md:col-span-1 md:row-span-2 rounded-3xl bg-gradient-to-b from-[#1a1a1a] to-black border border-white/10 p-6 flex flex-col relative overflow-hidden group">
+                    <div class="relative z-10 flex-1">
+                        <div class="w-10 h-10 rounded-full bg-insPurple flex items-center justify-center mb-4">
+                            <i data-lucide="image" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">视觉美学至上</h3>
+                        <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                            Instagram 是视觉平台。保持 Feed (信息流) 的色调统一、排版整洁是涨粉的第一步。<br><br>
+                            <span class="text-white">高质量图片 > 文字。</span>
+                        </p>
+                    </div>
+                    <div class="absolute bottom-0 right-0 w-32 h-32 bg-insPurple/20 blur-2xl"></div>
+                </div>
+
+                <div class="md:col-span-2 md:row-span-1 rounded-3xl bg-[#1a1a1a] border border-white/10 p-6 flex flex-col justify-center relative group hover:border-insRed/50 transition-all">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-insRed/20 rounded-xl">
+                            <i data-lucide="film" class="w-6 h-6 text-insRed"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">拥抱 Reels 短视频</h3>
+                            <p class="text-sm text-gray-400 mt-1">
+                                目前 Ins 算法给 Reels 的流量扶持最大。发布 15-60秒 的竖屏短视频，配合热门音乐 (Trending Audio)，能获得爆发式流量。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-1 md:row-span-1 rounded-3xl bg-[#1a1a1a] border border-white/10 p-6 flex flex-col relative hover:bg-zinc-800 transition-all">
+                    <div class="mb-auto">
+                        <i data-lucide="hash" class="w-6 h-6 text-insOrange mb-3"></i>
+                        <h3 class="text-lg font-bold text-white">精准标签</h3>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        不要只用大词。组合使用：行业大词 + 细分词 + 品牌词 (3-10个最佳)。
+                    </p>
+                </div>
+
+                <div class="md:col-span-1 md:row-span-1 rounded-3xl bg-[#1a1a1a] border border-white/10 p-6 flex flex-col relative hover:bg-zinc-800 transition-all">
+                    <div class="mb-auto">
+                        <i data-lucide="circle-dashed" class="w-6 h-6 text-insYellow mb-3"></i>
+                        <h3 class="text-lg font-bold text-white">Story 互动</h3>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        每天发 Story (快拍)，使用投票、提问贴纸，增加粉丝粘性。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-black border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="file-key" class="w-6 h-6 text-insPurple"></i> 账号交付格式
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-6">
+                        自动发货卡密格式如下，包含完整登录权限：
+                    </p>
+                    <div class="bg-black p-4 rounded-xl border border-white/10 font-mono text-xs text-insYellow break-all">
+                        username---password---email---email_pass---2fa_key
+                    </div>
+                </div>
+                <div class="w-full md:w-px h-px md:h-32 bg-white/10"></div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="shield-alert" class="w-6 h-6 text-insRed"></i> 安全提示
+                    </h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-insRed shrink-0 mt-0.5"></i>
+                            <span>拿到账号后，请先检查是否正常，建议养号24小时。</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-insRed shrink-0 mt-0.5"></i>
+                            <span>请使用指纹浏览器或干净的 IP 登录，避免风控。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 bg-black text-center border-t border-white/10">
+        <div class="flex items-center justify-center gap-2 mb-4 opacity-50">
+            <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+            <span class="font-black text-lg text-white">INS<span class="text-insPurple">Mai</span></span>
+        </div>
+        <p class="text-xs text-gray-600">© 2026 INS-Mai.TOP Services. All rights reserved.</p>
+        <div class="flex justify-center gap-4 mt-4 text-xs text-gray-600">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Mobile Menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ins-mai.top/sitemap.xml
