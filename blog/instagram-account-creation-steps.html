@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Instagram 账号创建步骤：2026 最新注册与避坑指南 | INS-Mai.TOP</title>
+    <meta name="description" content="手把手教你如何注册 Instagram 账号，避开封号雷区。涵盖注册前准备、注册步骤、新手避坑指南及专业账号设置，助你轻松开启 Ins 之旅。">
+    <meta name="keywords" content="Instagram注册教程, Ins账号创建, Instagram避坑, Ins专业账户, Instagram养号">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        dark: '#000000',
+                        card: '#121212',
+                        // Instagram 品牌渐变色系
+                        insPurple: '#833AB4',
+                        insRed: '#FD1D1D',
+                        insOrange: '#F77737',
+                        insYellow: '#FCAF45'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+
+        <style>
+        /* 极光背景 */
+        .bg-aurora {
+            background-color: #000000;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(131, 58, 180, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(253, 29, 29, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(247, 119, 55, 0.1) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ins 风格渐变文字 */
+        .text-gradient {
+            background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 渐变边框 */
+        .border-gradient {
+            position: relative;
+            background: padding-box linear-gradient(#121212, #121212), border-box linear-gradient(45deg, #833AB4, #FD1D1D);
+            border: 1px solid transparent;
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        /* Article Typography */
+        .prose h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .prose h3 {
+             color: #fff;
+             font-weight: 700;
+             margin-top: 1.5rem;
+             margin-bottom: 0.5rem;
+        }
+        .prose p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            color: #d1d5db;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #d1d5db;
+        }
+        .prose li {
+            margin-bottom: 0.5rem;
+        }
+        .prose strong {
+            color: #fff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans antialiased selection:bg-insRed selection:text-white bg-aurora">
+
+    <!-- Navbar -->
+        <nav class="sticky top-0 w-full z-50 glass-card border-x-0 border-t-0 bg-black/80 backdrop-blur-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 group cursor-pointer" aria-label="INS-Mai Homepage">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-insPurple via-insRed to-insOrange flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i data-lucide="shopping-bag" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-white">INS-Mai<span class="text-transparent bg-clip-text bg-gradient-to-r from-insPurple to-insOrange">.TOP</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-400">
+                    <a href="/#products" class="hover:text-white transition-colors duration-200 py-2">INS 账号</a>
+                    <a href="/#fans" class="hover:text-white transition-colors duration-200 py-2 flex items-center gap-1.5"><i data-lucide="flame" class="w-4 h-4 text-insRed"></i> 粉丝/KOL号</a>
+                    <a href="/#faq" class="hover:text-white transition-colors duration-200 py-2">常见问题</a>
+                    <a href="/blog" class="hover:text-white transition-colors duration-200 py-2">博客</a>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-4">
+                    <a href="/#products" class="hidden md:flex items-center gap-2 bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-all shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:-translate-y-0.5">
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                        立即购买
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden text-gray-300 p-2 hover:text-white transition-colors rounded-lg hover:bg-white/10">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/10 absolute w-full left-0 top-full shadow-2xl transition-all duration-300">
+            <div class="flex flex-col p-4 gap-2">
+                <a href="/#products" class="mobile-link block p-4 rounded-xl bg-white/5 text-gray-200 font-bold hover:bg-white/10 hover:text-white transition-all">
+                    INS 账号选购
+                </a>
+                <a href="/#fans" class="mobile-link block p-4 rounded-xl bg-white/5 text-gray-200 font-bold hover:bg-white/10 hover:text-white transition-all flex items-center gap-2">
+                    <i data-lucide="flame" class="w-4 h-4 text-insRed"></i> 粉丝/KOL号
+                </a>
+                <a href="/#faq" class="mobile-link block p-4 rounded-xl bg-white/5 text-gray-200 font-bold hover:bg-white/10 hover:text-white transition-all">
+                    常见问题
+                </a>
+                <a href="/blog" class="mobile-link block p-4 rounded-xl bg-white/5 text-gray-200 font-bold hover:bg-white/10 hover:text-white transition-all">
+                    博客文章
+                </a>
+                <a href="/#products" class="mobile-link block p-4 rounded-xl bg-gradient-to-r from-insPurple to-insRed text-white font-black text-center shadow-lg mt-2 hover:opacity-90 transition-opacity">
+                    前往商店下单
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+                    <nav class="flex text-sm text-gray-400" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2">
+                <li>
+                    <a href="/" class="hover:text-white transition-colors flex items-center gap-1">
+                        <i data-lucide="home" class="w-4 h-4"></i> 首页
+                    </a>
+                </li>
+                <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+                <li>
+                    <a href="/blog" class="hover:text-white transition-colors">博客</a>
+                </li>
+                <li><i data-lucide="chevron-right" class="w-4 h-4"></i></li>
+                <li class="text-white font-medium truncate">Instagram 账号 创建步骤</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <!-- Left Column: Article -->
+            <div class="lg:col-span-2">
+                <article class="glass-card rounded-3xl p-8 md:p-12 border-t border-white/10">
+                    <header class="mb-10 border-b border-white/10 pb-10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-insPurple/20 text-insPurple text-xs font-bold uppercase tracking-wider">新手教程</span>
+                            <span class="text-gray-500 text-xs flex items-center gap-1"><i data-lucide="clock" class="w-3 h-3"></i> 4分钟阅读</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                            Instagram 账号 <span class="text-gradient">创建步骤</span>
+                        </h1>
+                        <p class="text-xl text-gray-400 leading-relaxed">
+                            想注册一个 Instagram 账号，但又怕注册失败或者账号被封？跟着下面几步走，轻松搞定，还能避免新手常见坑！
+                        </p>
+                    </header>
+
+                    <div class="prose max-w-none">
+                        
+                        <h2><span class="text-insRed">01</span> 注册前的准备：邮箱和网络是关键</h2>
+                        <p>直接用国内手机号注册，账号很容易被封，或者注册后就提示“你的账号被暂停了”。正确的姿势是：</p>
+                        <ul>
+                            <li><strong>准备一个邮箱</strong>：强烈推荐使用 Gmail 或 Outlook 这类国际通用邮箱。如果用QQ邮箱等，可能会收不到验证码。</li>
+                            <li><strong>稳定的网络环境</strong>：需要使用合规的网络工具。建议固定一个地区的 IP 地址，频繁切换 IP 是导致账号被判定为“机器人”的主要原因之一。</li>
+                        </ul>
+
+                        <h2><span class="text-insRed">02</span> 注册账号：三步搞定</h2>
+                        <p>准备工作做好后，注册就很简单了。</p>
+                        <ul>
+                            <li><strong>访问官网</strong>：在浏览器打开 Instagram 官网 (instagram.com)。</li>
+                            <li><strong>创建新账户</strong>：点击“Create new account”，选择用邮箱注册，按提示填写信息。</li>
+                            <li><strong>验证邮箱</strong>：检查你的邮箱，点击收到的验证链接即可完成注册。</li>
+                        </ul>
+
+                        <h2><span class="text-insRed">03</span> 新手避坑：注册后千万别乱动</h2>
+                        <p>刚注册的新号非常脆弱，一不小心就可能被限流或封号。记住这几点：</p>
+                        <ul>
+                            <li><strong>完善资料但别急着加链接</strong>：注册当天就上传一个清晰的头像（个人用真人照，品牌用 Logo），并写好简介。但别马上放外部链接，可以先写“DM 我获取链接”。</li>
+                            <li><strong>别做“营销机器人”</strong>：<strong>千万不要注册当天就疯狂发广告图、加几十个好友</strong>。Instagram 会认为你是营销号并直接限流。前1-2周可以先像正常用户一样刷刷动态、点赞评论，让账号“养熟”。</li>
+                            <li><strong>内容要真实</strong>：发帖内容要高质量，避免模糊图片、血腥暴力或色情内容。可以先发一些产品高清图、使用场景图或者生活分享。</li>
+                            <li><strong>开启双重验证</strong>：在“设置”-“安全”里开启双重验证并绑定手机号，这样即使密码泄露，也能有效保护账号安全。</li>
+                        </ul>
+
+                        <h2><span class="text-insRed">04</span> 账号设置：打造专业主页</h2>
+                        <p>一个吸引人的主页是留住粉丝的第一步。</p>
+                        
+                        <h3 class="text-xl font-bold text-white mt-6 mb-4">1. 用户名（@）</h3>
+                        <p>建议和你的品牌或领域相关，比如 @travel.with.anna，方便别人搜索。</p>
+
+                        <h3 class="text-xl font-bold text-white mt-6 mb-4">2. 主页简介（Bio）</h3>
+                        <p>这是你的“黄金3秒”展示区。可以按照这个公式来写：<strong>身份标签 + 你能提供的价值 + 行动指令（CTA）</strong>。</p>
+                        <div class="my-4 p-4 bg-white/5 rounded-lg text-sm text-gray-300">
+                            <p class="mb-2"><span class="text-insRed">❌ 错误示范</span>：“爱旅行爱拍照 | 分享生活”（太模糊）</p>
+                            <p class="mb-0"><span class="text-green-500">✅ 正确示范</span>：“📌帮100+新手从0做Ins | 🎯每周更新海外社媒干货 | ✅点击领取《Ins起号清单》”</p>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mt-6 mb-4">3. 主页链接</h3>
+                        <p>新号可能没有直接挂链接的权限，可以先用 Linktree 这类工具将多个链接聚合，再放在简介里。</p>
+
+                        <h3 class="text-xl font-bold text-white mt-6 mb-4">4. 切换为专业账户</h3>
+                        <p>这是个关键步骤！可以免费查看粉丝数据、帖子表现和用户画像，还能添加“联系”按钮，对运营非常有帮助。</p>
+                        <p class="text-sm text-gray-400 bg-black p-3 rounded border border-white/10 font-mono">
+                            路径：主页 → 右上角菜单 → Settings → Account → Switch to professional account
+                        </p>
+
+                        <div class="mt-8 p-4 bg-white/5 rounded-xl border-l-4 border-insRed">
+                            <p class="text-gray-300">
+                                按照这些步骤，你的 Ins 账号就能稳稳起步了。记得保持耐心，好内容才是涨粉的关键！
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Right Column: Sales Card -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-24 space-y-6">
+                    
+                    <!-- Sales Card -->
+                    <div class="glass-card rounded-3xl p-6 border-gradient bg-[#1a050d]/90 relative overflow-hidden group">
+                        <div class="absolute -top-10 -right-10 w-32 h-32 bg-insRed/20 blur-3xl rounded-full pointer-events-none"></div>
+                        
+                        <div class="mb-4">
+                            <span class="px-3 py-1 rounded-md bg-insRed/20 text-insRed text-xs font-bold uppercase">Hot Sale</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-2">不想自己注册？</h3>
+                        <p class="text-sm text-gray-300 mb-6">
+                            注册太麻烦？立即获取高质量 Instagram 成品号。已开通 2FA 双重验证，安全稳定，即买即用。
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-insPurple/20 flex items-center justify-center">
+                                        <i data-lucide="shield-check" class="w-4 h-4 text-insPurple"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="text-white font-bold">2FA 邮箱号</div>
+                                        <div class="text-xs text-gray-500">新手首选</div>
+                                    </div>
+                                </div>
+                                <div class="text-white font-bold">¥29</div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-insRed/20 flex items-center justify-center">
+                                        <i data-lucide="flame" class="w-4 h-4 text-insRed"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="text-white font-bold">千粉 KOL 号</div>
+                                        <div class="text-xs text-gray-500">自带流量</div>
+                                    </div>
+                                </div>
+                                <div class="text-white font-bold">¥235</div>
+                            </div>
+                        </div>
+
+                        <a href="/#products" class="block w-full py-4 rounded-xl bg-gradient-to-r from-insRed to-insOrange hover:to-insYellow text-white text-center font-bold text-sm transition-all shadow-lg shadow-insRed/20 group-hover:scale-[1.02]">
+                            前往选购账号 <i data-lucide="arrow-right" class="w-4 h-4 inline-block ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="glass-card rounded-3xl p-6">
+                        <h3 class="font-bold text-white mb-4">需要帮助？</h3>
+                        <p class="text-sm text-gray-400 mb-4">如果您在购买或使用过程中遇到任何问题，请联系我们的客服。</p>
+                        <a href="#" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-white/10 hover:bg-white hover:text-black text-white text-sm font-bold transition-all">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> 联系客服
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+            <!-- Recommended Articles -->
+    <section class="py-20 bg-zinc-950 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-white">Recommended Reading</h2>
+                    <p class="text-gray-500 mt-2">更多 Instagram 运营干货</p>
+                </div>
+                <a href="/blog" class="hidden md:flex items-center gap-2 text-sm font-bold text-insPurple hover:text-white transition-colors">
+                    查看全部 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="/blog/instagram-account-ban-recovery.html" class="group block glass-card rounded-3xl overflow-hidden hover:bg-white/5 transition-all border-t border-white/10">
+                    <div class="h-48 bg-gradient-to-br from-gray-800 via-black to-gray-900 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-insRed/20 blur-3xl rounded-full"></div>
+                        <i data-lucide="shield-alert" class="w-12 h-12 text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-1 rounded bg-red-500/20 text-red-500 text-[10px] font-bold uppercase">账号申诉</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-insRed transition-colors line-clamp-2">
+                            Instagram 账号被封如何解决？
+                        </h3>
+                    </div>
+                </a>
+
+                <a href="/blog/instagram-account-creation-steps.html" class="group block glass-card rounded-3xl overflow-hidden hover:bg-white/5 transition-all border-t border-white/10">
+                    <div class="h-48 bg-gradient-to-br from-insRed/20 via-black to-insYellow/20 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-insRed/30 blur-3xl rounded-full"></div>
+                        <i data-lucide="user-plus" class="w-12 h-12 text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-1 rounded bg-insRed/20 text-insRed text-[10px] font-bold uppercase">注册指南</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-insRed transition-colors line-clamp-2">
+                            Instagram 账号创建步骤
+                        </h3>
+                    </div>
+                </a>
+
+                <a href="/blog/how-to-own-instagram-account.html" class="group block glass-card rounded-3xl overflow-hidden hover:bg-white/5 transition-all border-t border-white/10">
+                    <div class="h-48 bg-gradient-to-br from-insPurple/20 via-black to-insRed/20 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-insPurple/30 blur-3xl rounded-full"></div>
+                        <i data-lucide="instagram" class="w-12 h-12 text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-2 py-1 rounded bg-insPurple/20 text-insPurple text-[10px] font-bold uppercase">新手教程</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-insPurple transition-colors line-clamp-2">
+                            普通人怎么拥有 Instagram 账号
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="/blog" class="inline-flex items-center gap-2 text-sm font-bold text-insPurple hover:text-white transition-colors">
+                    查看全部 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-black border-t border-white/10 pt-16 pb-8 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-insPurple via-insRed to-insOrange flex items-center justify-center shadow-lg">
+                            <i data-lucide="shopping-bag" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-white">INS-Mai<span class="text-transparent bg-clip-text bg-gradient-to-r from-insPurple to-insOrange">.TOP</span></span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed">
+                        专业提供 Instagram 高权重老号、粉丝号及 KOL 账号。助您轻松开启全球品牌营销之旅。
+                    </p>
+                    <div class="flex gap-4 pt-2">
+                        <a href="#" rel="nofollow" class="text-gray-500 hover:text-insPurple transition-colors" aria-label="Twitter"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                        <a href="#" rel="nofollow" class="text-gray-500 hover:text-insPurple transition-colors" aria-label="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" rel="nofollow" class="text-gray-500 hover:text-insPurple transition-colors" aria-label="Github"><i data-lucide="github" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h3 class="font-bold text-white mb-6">产品服务</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/#products" class="text-gray-500 hover:text-white transition-colors">Instagram 账号购买</a></li>
+                        <li><a href="/#fans" class="text-gray-500 hover:text-white transition-colors">粉丝/KOL 账号</a></li>
+                        <li><a href="/#products" class="text-gray-500 hover:text-white transition-colors">精品老号</a></li>
+                        <li><a href="/#products" class="text-insOrange hover:text-white transition-colors font-bold">立即前往商店</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div>
+                    <h3 class="font-bold text-white mb-6">资源支持</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/blog" class="text-gray-500 hover:text-white transition-colors">博客文章</a></li>
+                        <li><a href="/#faq" class="text-gray-500 hover:text-white transition-colors">常见问题 (FAQ)</a></li>
+                        <li><a href="/blog/instagram-account-ban-recovery.html" class="text-gray-500 hover:text-white transition-colors">账号申诉指南</a></li>
+                        <li><a href="/blog/how-to-own-instagram-account.html" class="text-gray-500 hover:text-white transition-colors">新手入门教程</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div>
+                    <h3 class="font-bold text-white mb-6">关于我们</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/about.html" class="text-gray-500 hover:text-white transition-colors">关于 INS-Mai</a></li>
+                        <li><a href="/contact.html" class="text-gray-500 hover:text-white transition-colors">联系我们</a></li>
+                        <li><a href="/privacy.html" class="text-gray-500 hover:text-white transition-colors">隐私政策</a></li>
+                        <li><a href="/terms.html" class="text-gray-500 hover:text-white transition-colors">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+                <p>&copy; 2026 INS-Mai.TOP Services. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="/terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script>
+        lucide.createIcons();
+        
+        // Mobile Menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                const icon = menuBtn.querySelector('i');
+                if (isHidden) {
+                    icon.setAttribute('data-lucide', 'menu');
+                } else {
+                    icon.setAttribute('data-lucide', 'x');
+                }
+                lucide.createIcons();
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>

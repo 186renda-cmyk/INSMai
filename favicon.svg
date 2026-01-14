@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ins_gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCAF45" />
+      <stop offset="50%" stop-color="#FD1D1D" />
+      <stop offset="100%" stop-color="#833AB4" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#ins_gradient)" />
+  <!-- Shopping Bag Icon -->
+  <path d="M384 160H128c-17.6 0-32 14.4-32 32v192c0 17.6 14.4 32 32 32h256c17.6 0 32-14.4 32-32V192c0-17.6-14.4-32-32-32z" fill="none" stroke="#ffffff" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M192 160a64 64 0 0 1 128 0" fill="none" stroke="#ffffff" stroke-width="35" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="288" r="20" fill="#ffffff" />
+</svg>
